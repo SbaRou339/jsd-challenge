@@ -12,30 +12,27 @@ S[K] — number of seats in each car
 
 The group wants to use as few cars as possible while ensuring all people can be accommodated across the chosen cars. Any extra cars should remain parked.
 
-🧩 Approach
+## Approach
 
-This solution uses a greedy algorithm with sorting, which is optimal, simple, and easy to explain:
+- This solution uses a greedy algorithm with sorting, which is optimal, simple, and easy to explain:
+- Calculate the total number of people.
+- Sort seat capacities in descending order.
+- Take the largest cars first and keep subtracting their seat capacity from the remaining people.
+- Stop once everyone fits — the number of cars used is the answer.
+- This method is clean, efficient, and perfect for junior developer interviews or coding assessments.
 
-Calculate the total number of people.
+## Features
 
-Sort seat capacities in descending order.
+- Written in TypeScript
+- Easy-to-read, interview-ready solution
+- Includes example test cases
+- Clear algorithm explanation
+- Beginner and junior-friendly code
 
-Take the largest cars first and keep subtracting their seat capacity from the remaining people.
+## How to Run
 
-Stop once everyone fits — the number of cars used is the answer.
-
-This method is clean, efficient, and perfect for junior developer interviews or coding assessments.
-
-📦 Features
-
-✔️ Written in TypeScript
-
-✔️ Easy-to-read, interview-ready solution
-
-✔️ Includes example test cases
-
-✔️ Clear algorithm explanation
-
-✔️ Beginner and junior-friendly code
-
-🚀 How to Run
+- Open your terminal or command prompt.
+- Make sure you have TypeScript installed. If not, run: npm install -g typescript
+- Go to the file directory and initialize typescript using the command: tsc --init
+- Compile the TypeScript file to JavaScript using the command: tsc Challenge.ts
+- Run the resulting JavaScript file using Node.js with the command: node Challenge.js
